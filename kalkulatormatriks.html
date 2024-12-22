@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matriks</title>
+    <link rel="stylesheet" href="kalkulatormatriks.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Wrapper untuk H1 dan H3 -->
+        <div class="header-box">
+            <h1>Kalkulator Matriks</h1>
+            <h3>By : Listya Nur Fadilah</h3>
+        </div>
+
+        <div class="matrix-container">
+            <div class="matrix" id="matrixA">
+                <h2>Matriks A</h2>
+                <div class="matrix-inputs">
+                    <input type="number" id="a11">
+                    <input type="number" id="a12">
+                    <input type="number" id="a21">
+                    <input type="number" id="a22">
+                </div>
+            </div>
+
+            <div class="operations">
+                <select id="operationSelect">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+
+            <div class="matrix" id="matrixB">
+                <h2>Matriks B</h2>
+                <div class="matrix-inputs">
+                    <input type="number" id="b11">
+                    <input type="number" id="b12">
+                    <input type="number" id="b21">
+                    <input type="number" id="b22">
+                </div>
+            </div>
+        </div>
+
+        <button onclick="performOperation()">Hitung</button>
+        
+        <h2>Hasil</h2>
+        <div id="result" class="result-box"></div>
+    </div>
+    
+    <script src="kalkulatormatriks.js"></script>
+</body>
+</html>

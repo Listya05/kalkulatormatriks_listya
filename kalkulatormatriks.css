@@ -1,0 +1,154 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(Image/doraemon.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(248, 248, 245, 0.925);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Wrapper untuk h1 dan h3 */
+.header-box {
+    padding: 15px;
+    border: 2px solid #e2f57a;
+    border-radius: 8px;
+    background-color: #d7f338;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 22px;
+    color: white;
+}
+
+h3 {
+    font-size: 14px;
+    color: white;
+    margin-top: 5px;
+}
+
+.matrix-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.matrix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.matrix h2 {
+    margin: 0;
+    color: #c9df09;
+}
+
+/* Styling untuk input matriks */
+.matrix-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    border: 2px solid rgb(236, 238, 153);
+    background-color: rgb(236, 238, 153);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+input {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid rgb(243, 243, 247);
+    background-color: white;
+}
+
+input:focus {
+    outline: none;
+    background-color: #e4e6c8;
+}
+
+/* Styling untuk dropdown dan button */
+.operations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+select {
+    width: 70px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 90px;
+    height: 35px;
+    background-color: #d1dd29;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #d1dd29;
+}
+
+h2 {
+    margin-top: 15px;
+    color: #dbd945;
+}
+
+/* Styling untuk hasil */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    padding: 15PX;
+    border: 2px solid #cac84a;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #e8f5e9;
+}
+
+/* Stying untuk matrix hasil */
+.result-matrix {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.result-matrix div {
+    padding: 8px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+}
